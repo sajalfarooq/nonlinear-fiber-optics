@@ -59,4 +59,9 @@ From the repository root run `python reproduce.py --profile standard`. Use `--ru
 
 The FFT assumes a periodic window. Edge-energy and high-frequency diagnostics are warnings, not rigorous error bounds. The model excludes loss, Raman response, higher-order dispersion and self-steepening. The N=3 baseline figure is less refined than the dedicated recurrence calculation. These ideal simulations should not be described as experimental fiber measurements.
 
-Reference: G. P. Agrawal, *Nonlinear Fiber Optics*, 6th edition (2019), Chapters 2–5. Implementations are independently written with AI assistance.
+## References
+
+1. G. P. Agrawal, *Nonlinear Fiber Optics*, 6th ed., Academic Press (2019), Chapters 2–5. [Publisher](https://shop.elsevier.com/books/nonlinear-fiber-optics/agrawal/978-0-12-817042-7). Background for the NLSE, normalization, dispersion, Kerr nonlinearity and optical solitons.
+2. G. Strang, “On the Construction and Comparison of Difference Schemes,” *SIAM Journal on Numerical Analysis* **5**(3), 506–517 (1968). [DOI](https://doi.org/10.1137/0705041). Mathematical basis for symmetric operator splitting.
+3. A. Hasegawa and F. Tappert, “Transmission of stationary nonlinear optical pulses in dispersive dielectric fibers. I. Anomalous dispersion,” *Applied Physics Letters* **23**, 142–144 (1973). [DOI](https://doi.org/10.1063/1.1654836). Foundational theory of bright optical solitons in fibers.
+4. L. F. Mollenauer, R. H. Stolen and J. P. Gordon, “Experimental Observation of Picosecond Pulse Narrowing and Solitons in Optical Fibers,” *Physical Review Letters* **45**, 1095–1098 (1980). [DOI](https://doi.org/10.1103/PhysRevLett.45.1095). Experimental context; this project contains simulations, not a reproduction of that experiment.

@@ -18,8 +18,6 @@ Open `notebooks/` in VS Code and select this virtual environment. `report/techni
 
 All data are synthetic. The implementation and initial writing were developed with AI assistance. The cited scientific methods are established; algorithmic novelty is not claimed. `environment-tested.txt` records the full development environment, including optional tools; `pyproject.toml` lists this project's actual installation requirements.
 
-To upload on GitHub, extract this ZIP, create an empty repository, and upload the contents of this folder so `README.md` appears at the repository root. Do not upload the ZIP itself as the source repository.
-
 
 This study asks how a pulse changes when group-velocity dispersion competes with Kerr nonlinearity, and how initial chirp affects the minimum pulse width. It implements symmetric split-step Fourier propagation, verifies analytical limits, compares soliton orders, and scans chirp for a Gaussian pulse.
 
@@ -33,7 +31,7 @@ The implemented equation is
 
 $$i\frac{\partial u}{\partial\xi}+\frac{d}{2}\frac{\partial^2u}{\partial\tau^2}+g|u|^2u=0.$$
 
-For a lossless dimensional fiber, let $\tau=(t-\beta_1z)/T_0$, $\xi=z/L_D$, $L_D=T_0^2/|\beta_2|$, and $A=\sqrt{P_0}u$. Then $d=-\mathrm{sign}(\beta_2)$ and $g=\gamma P_0 L_D=N^2$. Positive d is anomalous dispersion under this convention. Project 2 permits the dimensionless dispersion magnitude to vary relative to a fixed reference length.
+For a lossless dimensional fiber, let $\tau=(t-\beta_1z)/T_0$, $\xi=z/L_D$, $L_D=T_0^2/|\beta_2|$, and $A=\sqrt{P_0}u$. Then $d=-\mathrm{sign}(\beta_2)$ and $g=\gamma P_0 L_D=N^2$. Positive d is anomalous dispersion under this convention.
 
 The fundamental solution for d=g=1 is $u=\mathrm{sech}(\tau)e^{i\xi/2}$. The N=2 and N=3 simulations use the same input sech envelope and g=N²; their intensity normalization is therefore the input-normalized field, rather than physical intensity at a shared P0.
 
@@ -65,8 +63,9 @@ Tests compare dispersion-only propagation with its exact discrete Fourier propag
 
 This is an ideal cubic NLSE study. It excludes attenuation, third-order dispersion, self-steepening and Raman effects. High-order solitons can demand finer sampling; their plots are qualitative demonstrations unless separately refined. A useful next investigation is a two-dimensional chirp/nonlinearity scan with window and grid refinement at each candidate optimum.
 
-## Explain in an interview
+## References
 
-Derive the normalization, explain the sign of the FFT propagator, distinguish power conservation from accuracy, and explain why soliton balance fails when d or g changes. Reproduce one convergence experiment with a different input pulse before claiming independent mastery.
-
-Reference: Agrawal, *Nonlinear Fiber Optics*, 6th ed., Chapters 2–5.
+1. G. P. Agrawal, *Nonlinear Fiber Optics*, 6th ed., Academic Press (2019), Chapters 2–5. [Publisher](https://shop.elsevier.com/books/nonlinear-fiber-optics/agrawal/978-0-12-817042-7). Background for the NLSE, normalization, dispersion, Kerr nonlinearity and optical solitons.
+2. G. Strang, “On the Construction and Comparison of Difference Schemes,” *SIAM Journal on Numerical Analysis* **5**(3), 506–517 (1968). [DOI](https://doi.org/10.1137/0705041). Mathematical basis for symmetric operator splitting.
+3. A. Hasegawa and F. Tappert, “Transmission of stationary nonlinear optical pulses in dispersive dielectric fibers. I. Anomalous dispersion,” *Applied Physics Letters* **23**, 142–144 (1973). [DOI](https://doi.org/10.1063/1.1654836). Foundational theory of bright optical solitons in fibers.
+4. L. F. Mollenauer, R. H. Stolen and J. P. Gordon, “Experimental Observation of Picosecond Pulse Narrowing and Solitons in Optical Fibers,” *Physical Review Letters* **45**, 1095–1098 (1980). [DOI](https://doi.org/10.1103/PhysRevLett.45.1095). Experimental context; this project contains simulations, not a reproduction of that experiment.
