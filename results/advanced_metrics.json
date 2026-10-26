@@ -1,0 +1,113 @@
+{
+  "profile": "standard",
+  "certificate": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "fundamental_soliton_complex_field",
+        "value": 5.11958107876348e-07,
+        "limit": 2e-05,
+        "passed": true
+      },
+      {
+        "name": "gaussian_infinite_domain_solution",
+        "value": 1.0628285238249512e-14,
+        "limit": 1e-10,
+        "passed": true
+      },
+      {
+        "name": "strang_convergence_order",
+        "value": 1.9998023277625918,
+        "expected_interval": [
+          1.8,
+          2.2
+        ],
+        "passed": true
+      }
+    ],
+    "sampling": {
+      "edge_energy_fraction": 4.764215441228185e-15,
+      "high_frequency_energy_fraction": 2.729130543830863e-23
+    },
+    "step_errors": [
+      4.097578367835128e-05,
+      1.0246188419332706e-05,
+      2.561688368074065e-06
+    ]
+  },
+  "recurrence": [
+    {
+      "N": 2,
+      "refinement": [
+        {
+          "grid": 1024,
+          "steps": 2400,
+          "relative_amplitude_recurrence_error": 7.193449425339957e-06,
+          "edge_energy_fraction": 4.752971716045343e-15,
+          "high_frequency_energy_fraction": 2.7261470407423626e-23
+        },
+        {
+          "grid": 2048,
+          "steps": 4800,
+          "relative_amplitude_recurrence_error": 1.7984407249387397e-06,
+          "edge_energy_fraction": 4.94076295484764e-15,
+          "high_frequency_energy_fraction": 3.384809140745198e-24
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "refinement": [
+        {
+          "grid": 1024,
+          "steps": 2400,
+          "relative_amplitude_recurrence_error": 0.0001146017295178807,
+          "edge_energy_fraction": 2.3348357788552475e-14,
+          "high_frequency_energy_fraction": 2.7441620560015796e-23
+        },
+        {
+          "grid": 2048,
+          "steps": 4800,
+          "relative_amplitude_recurrence_error": 2.866930856994331e-05,
+          "edge_energy_fraction": 5.752465608362332e-15,
+          "high_frequency_energy_fraction": 3.4707814517483566e-24
+        }
+      ]
+    }
+  ],
+  "linear_field_error": 1.1455336528203233e-10,
+  "spm_max_intensity_change": 1.0313971898767704e-13,
+  "compression_refinement": [
+    {
+      "grid": 256,
+      "window": 24,
+      "steps": 300,
+      "relative_error": 3.906068514275155e-06,
+      "edge_energy_fraction": 1.4375462307822445e-24,
+      "high_frequency_energy_fraction": 1.5155615667327078e-15
+    },
+    {
+      "grid": 512,
+      "window": 24,
+      "steps": 600,
+      "relative_error": 9.300248119143345e-07,
+      "edge_energy_fraction": 3.0130439807693236e-27,
+      "high_frequency_energy_fraction": 1.7523602080029985e-29
+    },
+    {
+      "grid": 1024,
+      "window": 48,
+      "steps": 1200,
+      "relative_error": 1.8600551888001215e-07,
+      "edge_energy_fraction": 4.7831294591404006e-27,
+      "high_frequency_energy_fraction": 4.778870317837774e-29
+    }
+  ],
+  "collision": {
+    "edge_energy_fraction": 2.24252886183284e-12,
+    "high_frequency_energy_fraction": 1.2431770598827871e-23,
+    "relative_energy_drift": 1.9764190284377037e-12,
+    "hamiltonian_drift_scaled": 2.488810182968132e-06,
+    "note": "approximate separated-pulse initial condition; no exact two-soliton solution claim"
+  }
+}

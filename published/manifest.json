@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "data": "synthetic",
+  "files": {
+    "results/advanced_metrics.json": "6f9459fe7bacd520ab696e6c91b89f4cf8d7318e07b9145f70165e0f59cc8c6d",
+    "results/compression.png": "b2ad9eff2840942db4cdd0d4d6e894355ef45a1e6631a7289dfa35d99a03f242",
+    "results/dispersion_spm.png": "9883a55e64669bc2ff49c9701e74e0845e169a8532d032f4183581edca94550e",
+    "results/extended_data.npz": "edfd5a93e759e0dee24ddeb40db55f528f0c78fdde9d7a4f3237676d8d00c934",
+    "results/metrics.json": "b8e0f801e736a18042b09ce9b490e66b7edb12e20badce7200c6b9f2eb312c1e",
+    "results/run_config.json": "2999673e174fe273e9c70026b9177c46334f6f1936c246197cb11c8b97621860",
+    "results/soliton_collision.png": "f328c0fe6f795f2bc5c704578ed5e6dbadde58718c3b9007e27b6d5d02b0b08b",
+    "results/soliton_orders.png": "75b94c93a3f290079b395ec156d4b2095764760444aa3679f36ab8df65ba4da8",
+    "results/study_data.npz": "5f8f3339779d451dd054d4b1585a124774af09d656f4374f5d0a6d13e5d2d803",
+    "results/validation.png": "f6afd16966846564bbb6f98b5852a1f95182eee76b42a1f23ae10ab2ced99e8b"
+  }
+}

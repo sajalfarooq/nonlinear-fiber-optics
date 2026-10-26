@@ -1,0 +1,36 @@
+{
+  "data_source": "synthetic simulation; no experimental measurements",
+  "python": "3.12.10",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1"
+  },
+  "soliton_relative_field_error": 9.948219589454205e-06,
+  "max_relative_energy_drift": 2.349231920106831e-13,
+  "convergence_order": 2.001640408371057,
+  "step_counts": [
+    40,
+    80,
+    160,
+    320
+  ],
+  "convergence_errors": [
+    4.845727432653825e-05,
+    1.2114756259814267e-05,
+    3.0266367853952526e-06,
+    7.544510985683402e-07
+  ],
+  "chirp_scan": {
+    "best_chirp": -2.0,
+    "minimum_rms_width_ratio": 0.3044008227501042,
+    "distance": 0.4,
+    "g": 2.0,
+    "range": [
+      -2,
+      2
+    ],
+    "samples": 25
+  }
+}
