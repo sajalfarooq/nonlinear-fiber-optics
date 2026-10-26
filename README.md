@@ -65,8 +65,4 @@ Tests compare dispersion-only propagation with its exact discrete Fourier propag
 
 This is an ideal cubic NLSE study. It excludes attenuation, third-order dispersion, self-steepening and Raman effects. High-order solitons can demand finer sampling; their plots are qualitative demonstrations unless separately refined. A useful next investigation is a two-dimensional chirp/nonlinearity scan with window and grid refinement at each candidate optimum.
 
-## Explain in an interview
-
-Derive the normalization, explain the sign of the FFT propagator, distinguish power conservation from accuracy, and explain why soliton balance fails when d or g changes. Reproduce one convergence experiment with a different input pulse before claiming independent mastery.
-
 Reference: Agrawal, *Nonlinear Fiber Optics*, 6th ed., Chapters 2–5.
